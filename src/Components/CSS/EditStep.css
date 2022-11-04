@@ -1,0 +1,39 @@
+.editstep-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dark{
+    background-color: var(--bg-alt);
+}
+
+.inner{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.editstep-container .step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.editstep-container .image{
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    height: 15rem;
+    aspect-ratio: 16/9;
+    background-color: var(--bg-accent);
+}
+
+.editstep-container .image img{
+    border-radius: var(--border-radius);
+    height: 100%;
+    width: 100%;
+}

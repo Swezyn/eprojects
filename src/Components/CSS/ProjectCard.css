@@ -1,0 +1,31 @@
+.card{
+    width: 100vw;
+}
+
+.card-image img{
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card .box{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .box.side{
+    display: block;
+    padding: 0 3rem;
+}
+
+.card h2{
+    font-size: 1.2rem;
+}
+
+.card p{
+    font-size: 0.8rem;
+    color: var(--text-color-dark);
+    white-space: nowrap;
+}

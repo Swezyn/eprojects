@@ -1,0 +1,59 @@
+.navbar {
+    position: fixed;
+    height: var(--nav-size);
+    transform: translateY(-100%);
+    width: 100%;
+    background-color: var(--nav-color);
+    padding: 0 1rem;
+    border-bottom: var(--border);
+    display: flex;
+    justify-content: space-between;
+    z-index: 700;
+  }
+
+  .navbar .left{
+    display: flex;
+  }
+  
+  .navbar-nav {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .navbar-logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-logo img{
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .navbar-logo h1{
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .navbar-logo h1 span{
+    color: var(--accent-hover);
+  }
+
+  .dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    top: var(--nav-size);
+    right: 1rem;
+    width: 15rem;
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+  }

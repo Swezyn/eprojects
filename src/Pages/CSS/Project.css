@@ -1,0 +1,49 @@
+.project_container{
+    margin: 5vh 7vw;
+    position: absolute;
+}
+
+.project_container .about{
+    display: flex;
+    justify-content: center;
+}
+
+.project_container img{
+    width: 40vw;
+    height: 40vh;
+    margin-right: 10rem;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+}
+
+.project_container .right h1{
+    font-size: 4vw;
+    margin: 5vh 0;
+}
+
+.project_container h3{
+    margin-top: 5vh;
+    font-size: 2vw;
+}
+
+.project_container p{
+    font-size: 1vw;
+}
+
+.project_container .text{
+    margin-top: 5vh;
+}
+
+.project_container .info{
+    position: absolute;
+    top: 55vh;
+    left: 5vw;
+    height: 10vh;
+}
+
+.project_container .resources{
+    position: absolute;
+    top: 55vh;
+    left: 25vw;
+    height: 10vh;
+}

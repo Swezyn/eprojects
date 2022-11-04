@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Futura-CondensedExtraBold", sans-serif;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  :root {
+    --bg:  #17171E;
+    --bg-alt: #222229;
+    --bg-accent: #2C2C33;
+    --accent: #A20A08;
+    --accent-hover: #A20A08;
+    --text-color: #dadce1;
+    --text-color-dark: #71747b;
+    --nav-color: #17171E;
+    --nav-size: 60px;
+    --border: 1px solid #474a4d;
+    --border-radius: 1rem;
+    --speed: 500ms; 
+  }
+
+  .MuiInputBase-root {
+    background-color: var(--bg-accent);
+    border-radius: var(--border-radius) !important;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;;
+  }
+
+  .background{
+    background: var(--bg);
+    min-height: calc(100vh - var(--nav-size));
+    background-size: 100vw;
+    object-fit: cover;
+    z-index: -5;
+    margin-top: var(--nav-size);
+  }
+  
+  .stripes {
+    width: 100%;
+    position: absolute;
+    top: 23vh;
+  }
+
+  .stripe {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--bg-alt);
+    margin-top: 3rem;
+    z-index: -5;
+  }
+
+  .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 500;
+}
+
+.overlay h1{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.overlay h2{
+    font-weight: 500;
+}
+
+.center{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

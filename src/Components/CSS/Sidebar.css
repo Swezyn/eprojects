@@ -1,0 +1,32 @@
+.sidebar-container{
+    min-height: calc(100vh - var(--nav-size));
+    background-color: var(--bg-accent);
+    transition: width 0.5s;
+    z-index: 500;
+}
+
+.sidebar-container Button{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.sidebar-container p{
+    position: absolute;
+    left: 1rem;
+    opacity: 0;
+    transition: var(--speed);
+    white-space: nowrap;
+}
+
+.sidebar-container.active p{
+    opacity: 1;
+    left: 3.5rem;
+    transition: var(--speed);
+}
+
+@media screen and (max-width: 768px){
+    .sidebar-container{
+        position: absolute;
+    }
+}
